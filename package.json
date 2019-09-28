@@ -1,0 +1,21 @@
+{
+  "name": "mocker-webpack-plugin",
+  "version": "1.0.0",
+  "description": "🖐Mock data easily with webpack",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zphhhhh/mocker-webpack-plugin.git"
+  },
+  "keywords": ["mock", "mocker", "webpack", "plugin"],
+  "author": "zphhhhh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zphhhhh/mocker-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/zphhhhh/mocker-webpack-plugin#readme"
+}
