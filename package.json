@@ -11,11 +11,19 @@
     "type": "git",
     "url": "git+https://github.com/zphhhhh/mocker-webpack-plugin.git"
   },
-  "keywords": ["mock", "mocker", "webpack", "plugin"],
+  "keywords": [
+    "mock",
+    "mocker",
+    "webpack",
+    "plugin"
+  ],
   "author": "zphhhhh",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zphhhhh/mocker-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/zphhhhh/mocker-webpack-plugin#readme"
+  "homepage": "https://github.com/zphhhhh/mocker-webpack-plugin#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  }
 }

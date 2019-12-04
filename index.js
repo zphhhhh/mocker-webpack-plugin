@@ -5,6 +5,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 class MockerWebpackPlugin {
     /**
@@ -54,6 +55,7 @@ class MockerWebpackPlugin {
                 preAfter(app);
             }
 
+            app.use(bodyParser({extended: false}));
             app.use(this.mockMiddleware);
         };
     }
