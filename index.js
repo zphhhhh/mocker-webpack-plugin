@@ -14,7 +14,8 @@ class MockerWebpackPlugin {
      */
     constructor(options) {
         this.options = Object.assign({
-            path: ''
+            path: '',
+            mode: 'before'
         }, options);
 
         /**
@@ -48,11 +49,12 @@ class MockerWebpackPlugin {
      * @param {Object} devServer 
      */
     mock(devServer) {
-        const preAfter = devServer.after;
+        const mode = this.options.mode;
+        const preMode = devServer[mode];
 
-        devServer.after = app => {
-            if (preAfter && typeof preAfter === 'function') {
-                preAfter(app);
+        devServer[mode] = app => {
+            if (preMode && typeof preMode === 'function') {
+                preMode(app);
             }
 
             app.use(bodyParser({extended: false}));
