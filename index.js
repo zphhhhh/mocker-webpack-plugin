@@ -77,7 +77,9 @@ class MockerWebpackPlugin {
                     result = result(req, res);
                 }
 
-                res.send(result);
+                if (typeof result === 'object') {
+                    res.send(result);
+                }
 
                 delete require.cache[require.resolve(file)];
                 return true;
