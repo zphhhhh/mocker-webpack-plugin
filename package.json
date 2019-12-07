@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/zphhhhh/mocker-webpack-plugin#readme",
   "dependencies": {
-    "body-parser": "^1.19.0"
+    "body-parser": "^1.19.0",
+    "micromatch": "^4.0.2"
   }
 }

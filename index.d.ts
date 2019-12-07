@@ -6,6 +6,9 @@ interface MockerOptions {
 }
 
 declare class MockerWebpackPlugin {
+    options: MockerOptions;
+    proxyUrls: string[];
+    FILES: string[];
     constructor(options: MockerOptions);
 }
 
